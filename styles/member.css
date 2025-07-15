@@ -86,3 +86,21 @@ h3 , h4 {
 a:hover{
     background-color: rgb(138, 210, 197);
 }
+/* main-container */ 
+main{
+     margin: 10px auto;
+    max-width: 980px;
+    border: 2px solid palevioletred;
+}
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+@media screen and (max-width:576px) {
+    .main-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .card{
+        margin: 10px auto;
+    }
+}
