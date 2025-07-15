@@ -1,0 +1,78 @@
+      /* *{
+            margin: 0px;
+        } */
+        main{
+            /* background-color: #FF7D29; */
+            background-color: #FFBF78;
+            padding: 20px;
+        }
+        .main-tittle{
+            font-size: 3rem;
+            text-align: center;
+            color: #521C0D;
+            
+        }
+        .container{
+            display: flex;
+            justify-content: space-evenly;
+            flex: 1;
+            padding: 20px;
+            
+        }
+        .description{
+            /* border: 2px solid tomato; */
+            padding: 20px;
+            font-size: 1.5rem;
+            padding-right: 100px;
+            margin-left: 30px;
+            border-radius: 10px;
+            background-color: #FFEEA9;
+            
+        }
+         img{
+            width: 100%;
+        }
+        .con-img{
+            /* border: 2px solid ; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #FFEEA9;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        
+        .my-image{
+            /* height: 250px; */
+            max-width: 35%;
+            
+            border-radius: 10px;
+            
+        }
+       
+        
+        .blood{
+            color: red;
+            font-weight: bold;
+        }
+        
+        @media screen and (max-width:576px) {
+            .container{
+                flex-direction: column;
+            }
+            main{
+                padding: 10px;
+            }
+            .main-tittle{
+                font-size: 2rem;
+            }
+            .description{
+                padding-right: 0px;
+                margin-left: 0px;
+                margin-top: 20px;
+            }
+            #email{
+            font-size: 1rem;
+            width: 100%;
+            }
+        }
