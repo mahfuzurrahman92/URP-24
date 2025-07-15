@@ -1,0 +1,21 @@
+/* common style */
+.display-flex{
+    display: flex;
+}
+/* nav bar */
+.nav-bar{
+    align-items: center;
+    
+}
+nav ul{
+    justify-content: space-between;
+
+}
+.list-item{
+    list-style: none;
+
+}
+.nav-item{
+    text-decoration: none;
+    
+}
