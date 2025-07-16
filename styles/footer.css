@@ -35,6 +35,9 @@ hr{
     width: 50%;
 }
 /* footer about */
+.footer-about{
+  text-align: center;
+}
 .footer-about ,
 .footer-skill{
     max-width: 30%;
