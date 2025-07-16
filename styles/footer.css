@@ -38,7 +38,7 @@ hr{
 .footer-about ,
 .footer-skill{
     max-width: 30%;
-    border: 2px solid red;
+   
 }
 
 .footer-tittle{
@@ -73,4 +73,41 @@ hr{
 
  li{
     list-style: none;
+}
+/* footer contact */
+.footer-contact{
+    color: var(--text-secondary);
+}
+#location{
+    max-height: 30px;
+}
+.foot-con-items{
+    /* justify-content: center; */
+    
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.foot-con-des{
+    margin-left: 10px;
+}
+/* h4 */
+footer h4 {
+    /* margin: 0px; */
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:576px) {
+    .footer-container{
+        margin: 0px;
+        width: 100%;
+        flex-direction: column;
+    }
+    .footer-about ,
+   .footer-skill{
+    width: 100%;
+   
+}
+
 }
