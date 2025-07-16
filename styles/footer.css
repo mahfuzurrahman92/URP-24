@@ -18,7 +18,7 @@
 /* footer */
 footer{
     margin: 50px 0px;
-    border: 2px solid;
+    
     padding: 10px;
     background-color: var(--primary-bg);
 }
@@ -98,16 +98,42 @@ footer h4 {
     justify-content: center;
     align-items: center;
 }
+a{
+  text-decoration: none;  
+}
+img:hover{
+    
+    color: white;
+    background-color: var(--primary-color);
+}
 @media screen and (max-width:576px) {
     .footer-container{
         margin: 0px;
         width: 100%;
         flex-direction: column;
     }
+    .footer-skill , 
+    .footer-about {
+    padding: 10px;
+   }
+    
     .footer-about ,
    .footer-skill{
-    width: 100%;
+    max-width:  100%;
    
+ }
+ .footer-about ,
+ .footer-skill ,
+ .footer-contact {
+    margin: 10px ;
+
+ }
+
+  
+.footer-about-img-container ,
+.footer-about{
+    
+    text-align: center;
 }
 
 }
