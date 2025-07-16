@@ -106,4 +106,7 @@ nav ul{
     .nav-bar{
         flex-direction: column;
     }
+    nav ul{
+        gap: 10px;
+    }
 }
