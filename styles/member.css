@@ -57,6 +57,10 @@ nav ul{
 }
 
 /* main */
+.members-tittle{
+    font-size: 3rem;
+    color: var(--primary-color);
+}
 .card{
     padding: 20px;
     margin: 10px;
