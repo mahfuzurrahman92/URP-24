@@ -107,9 +107,5 @@ nav ul{
     ul{
         flex-direction: column;
     }
-     ul{
-        gap: 10px;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-    }
+    
 }
