@@ -114,13 +114,12 @@ main{
     .card{
         margin: 10px auto;
     }
-    .nav-bar{
+    .nav-bar ,
+    ul{
         flex-direction: column;
+        
     }
-    nav ul{
-        gap: 10px;
-        justify-content: space-evenly;
-    }
+    
 }
 /* medium device */
 @media screen and (min-width:577px) and (max-width:992px) {
