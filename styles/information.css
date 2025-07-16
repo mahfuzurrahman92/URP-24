@@ -1,15 +1,27 @@
       /* *{
             margin: 0px;
         } */
+         /* root variable */
+         :root{
+    --primary-bg:rgba(255, 224, 14, 0.1);
+    --secondary-bg:whitesmoke;
+    --text-primary: black;
+    --text-secondary: rgba(114, 114, 114, 1);
+    --primary-color:#FF900E;
+
+    
+    
+
+}
         main{
             /* background-color: #FF7D29; */
-            background-color: #FFBF78;
+            background-color: var(--primary-bg);
             padding: 20px;
         }
         .main-tittle{
             font-size: 3rem;
             text-align: center;
-            color: #521C0D;
+            
             
         }
         .container{
@@ -26,7 +38,9 @@
             padding-right: 100px;
             margin-left: 30px;
             border-radius: 10px;
-            background-color: #FFEEA9;
+            
+            border: 1px solid var(--text-secondary);
+            background-color: var(--secondary-bg);
             
         }
          img{
@@ -37,14 +51,16 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #FFEEA9;
+            background-color: var(--secondary-bg);
             border-radius: 10px;
+            border: 1px solid var(--text-secondary);
             padding: 20px;
         }
         
         .my-image{
             /* height: 250px; */
-            max-width: 35%;
+            width: 50%;
+            height: 50%;
             
             border-radius: 10px;
             
@@ -74,5 +90,8 @@
             #email{
             font-size: 1rem;
             width: 100%;
+            }
+            .my-image{
+                width: 100%;
             }
         }

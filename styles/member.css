@@ -2,8 +2,15 @@
 .display-flex{
     display: flex;
 }
+/* variable control with css */
 :root{
-    --primary-color:#FCEF91
+    --primary-bg:rgba(255, 224, 14, 0.1);
+    --secondary-bg:whitesmoke;
+    --text-primary: black;
+    --text-secondary: rgba(114, 114, 114, 1);
+    --primary-color:#FF900E;
+
+    
     
 
 }
@@ -15,13 +22,13 @@
 }
 header{
     padding: 20px;
-    background-color: var(--primary-color);
+    background-color: var(--primary-bg);
 }
 /* nav bar */
 .tittle{
-    font-size: xx-large;
+    font-size: 3rem;
     font-weight: bolder;
-    color: rgb(252, 76, 12);
+    color: var(--text-secondary);
 }
 .nav-bar{
     
@@ -37,6 +44,7 @@ nav ul{
     list-style: none;
     padding: 5px;
     border-radius: 30px;
+    font-size: 1.5rem;
     
 
 }
@@ -44,7 +52,7 @@ nav ul{
     padding: 5px;
     text-decoration: none;
     border-radius: 30px;
-    color: rgb(252, 76, 12);
+    color: var(--text-secondary);
     
 }
 
@@ -53,8 +61,8 @@ nav ul{
     padding: 20px;
     margin: 10px;
     /* background-color: azure; */
-    background-color: #FFEEA9;
-    border: 2px solid tomato;
+    background-color: var(--secondary-bg);
+    border: 1px solid var(--text-secondary);
     border-radius: 10px;
     width: 250px;
     justify-items: center;
@@ -84,23 +92,35 @@ h3 , h4 {
     margin: 2px;
 }
 a:hover{
-    background-color: rgb(138, 210, 197);
+    
+    color: white;
+    background-color: var(--primary-color);
 }
 /* main-container */ 
 main{
      margin: 10px auto;
     max-width: 980px;
-    border: 2px solid palevioletred;
+    /* border: 2px solid var(--text-secondary); */
 }
 .main-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
+/* small device */
 @media screen and (max-width:576px) {
     .main-container{
         grid-template-columns: repeat(1,1fr);
     }
     .card{
         margin: 10px auto;
+    }
+    .nav-bar{
+        flex-direction: column;
+    }
+}
+/* medium device */
+@media screen and (min-width:577px) and (max-width:992px) {
+    .main-container{
+        grid-template-columns: repeat(2,1fr);
     }
 }
