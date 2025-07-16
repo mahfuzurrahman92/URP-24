@@ -108,5 +108,6 @@ nav ul{
     }
     nav ul{
         gap: 10px;
+        justify-content: space-evenly;
     }
 }

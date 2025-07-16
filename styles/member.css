@@ -119,6 +119,7 @@ main{
     }
     nav ul{
         gap: 10px;
+        justify-content: space-evenly;
     }
 }
 /* medium device */
